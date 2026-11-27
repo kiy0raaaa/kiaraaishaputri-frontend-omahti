@@ -1,54 +1,55 @@
-# OmahFE Landing Page
+# OmahFE - Slicing Web dari Figma
 
-Website landing page untuk **OmahFE**, dibuat dari desain Figma menggunakan HTML, CSS, dan JavaScript biasa (tanpa framework).
+Penugasan Open Recruitment Frontend OmahTI UGM 2026/2027. Website landing page OmahFE yang dibuat dari desain Figma menggunakan vanilla HTML, CSS, dan JavaScript (tanpa framework atau library UI).
 
 ## Identitas Diri
 
 - **Nama**: Kiara Aisha Putri
 - **NIM**: 26/577981/PA/24208
+- **Program Studi**: Ilmu Komputer, FMIPA Universitas Gadjah Mada
+- **Repository**: https://github.com/kiy0raaaa/kiaraaishaputri-frontend-omahti
 
-## Bagian Halaman
+## Struktur Repository
 
-- **Navbar**: menu navigasi dan tombol Sign In / Sign Up
-- **Landing Page**: judul, deskripsi singkat, dan gambar utama
-- **Tentang Kami**: penjelasan singkat OmahFE
-- **Portofolio**: kartu portofolio dengan tombol Show More / Show Less
-- **Testimoni**: kartu testimoni
-- **FAQ**: pertanyaan yang bisa dibuka-tutup
-- **Contact**: form kontak
-- **Footer**: alamat, link navigasi, dan ikon sosial media
+```
+kiaraaishaputri-frontend-omahti/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+    ├── fonts/
+    ├── images/
+    └── icons/
+```
+
+## Isi Halaman
+
+Navbar, Landing Page, Tentang Kami, Portofolio, Testimoni, FAQ, Contact, dan Footer. Font yang dipakai: Mystery Quest, Inter, dan Scotch Text Compressed. Tag HTML yang dipakai antara lain `header`, `nav`, `main`, `section`, `footer`, `details`/`summary`, `dialog`, dan `form` dengan `label`.
 
 ## Fitur Opsional yang Dikerjakan
 
-- Halaman responsif pada breakpoint 1024px, 768px, dan 480px, termasuk menu hamburger dan susunan grid yang menyesuaikan.
-- Tombol **Show More / Show Less** menampilkan kartu portofolio tambahan, memperbarui label, status aksesibilitas, dan arah ikon.
-- Modal **Sign In / Sign Up** dengan perpindahan form, validasi email/password, konfirmasi password, penutupan via overlay/tombol Escape, serta pesan hasil lokal. Data password tidak disimpan atau dikirim.
-- Validasi inline untuk form Contact dan pesan konfirmasi saat field valid.
-- FAQ menggunakan accordion native `<details>` dengan transisi visual.
-- Animasi masuk viewport, hover, dan navigasi aktif/smooth scroll; gerakan dikurangi saat preferensi reduced motion aktif.
+- **Desain responsif** dengan breakpoint 1024px, 768px, dan 480px. Di layar kecil navbar berubah jadi hamburger menu.
+- **Show More / Show Less** di portofolio, dengan ikon panah yang ikut berputar.
+- **Carousel testimoni** dengan tombol panah kiri dan kanan. Kartu berputar: kartu paling kiri pindah ke belakang saat klik kanan, dan sebaliknya.
+- **FAQ accordion** memakai `<details>` dengan animasi buka-tutup dan ikon yang berputar.
+- **Modal Sign In dan Sign Up** (elemen `<dialog>`) dengan validasi di sisi front-end: email valid, password minimal 8 karakter, dan konfirmasi password harus sama. Data tidak dikirim ke server dan tidak disimpan.
+- **Validasi form Contact**: field wajib diisi dan format email dicek, lengkap dengan pesan error dan pesan sukses.
+- **Animasi** muncul saat di-scroll dan efek hover, dengan dukungan `prefers-reduced-motion`.
+- **Navigasi**: smooth scroll dan link navbar yang menandai section yang sedang dilihat.
 
 ## Penggunaan AI
 
-Saya menggunakan Claude (AI dari Anthropic) sebagai bantuan saat mengerjakan, khususnya untuk:
+Saya memakai AI sebagai bantuan dalam pengerjaan, dengan rincian:
 
-- Memperbaiki layout kartu portofolio yang tersembunyi (agar ikut grid dan tidak menyisakan ruang kosong)
-- Mencari penyebab ikon panah pada tombol Show More / Show Less yang tidak berubah (ternyata elemen `<img>`-nya belum diberi `id`)
-- Membantu menyelesaikan kode yang error jika tak kunjung terpecahkan masalahnya.
+- **Claude (Anthropic)**: memperbaiki layout kartu portofolio yang tersembunyi agar mengikuti grid, mencari penyebab ikon panah Show More yang tidak berputar, membuat carousel testimoni yang berputar, dan menganalisis penyebab alur kode dan layout CSS yang tidak sesuai (layout shift, gambar yang menumpuk vertikal, ikon panah testimoni tidak bisa dipencet, dan lainnya).
+- **Google Gemini**: penyesuaian layout Contact Form (proporsi 0.8:1.2 & posisi tombol Send), debugging CSS flex-wrap pada portofolio, pembuatan struktur HTML/CSS Footer.
 
-GitHub Copilot juga digunakan untuk audit kode, perbaikan temuan, desain responsif, dan implementasi fitur opsional.
-
-Desain, struktur halaman, dan konten saya kerjakan sendiri. Kode yang dibantu AI sudah saya baca dan uji sendiri di browser.
-
-## Teknologi
-
-- HTML5
-- CSS3 (Flexbox dan Grid)
-- JavaScript
-- Font: Inter, Scotch, dan Mystery Quest
+Semua kode sudah saya baca, saya uji di browser, dan saya sesuaikan sendiri.
 
 ## Cara Menjalankan
 
-1. Clone repository ini:
+1. Clone repository:
    ```bash
    git clone https://github.com/kiy0raaaa/kiaraaishaputri-frontend-omahti.git
    ```
@@ -56,4 +57,4 @@ Desain, struktur halaman, dan konten saya kerjakan sendiri. Kode yang dibantu AI
    ```bash
    cd kiaraaishaputri-frontend-omahti
    ```
-3. Buka file `index.html` di browser (atau pakai Live Server di VS Code).
+3. Buka `index.html` di browser, atau jalankan dengan Live Server di VS Code.
