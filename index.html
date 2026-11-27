@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,13 +16,12 @@
         type="button"
         aria-label="Open navigation menu"
         aria-expanded="false"
-        aria-controls="primary-navigation"
       >
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+      <nav class="nav-links" id="primary-navigation">
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#testimonial">Testimonial</a>
@@ -30,8 +29,12 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="sign">
-        <button type="button" class="sign-in" data-auth-open="signin" aria-haspopup="dialog" aria-controls="auth-dialog">Sign In</button>
-        <button type="button" class="sign-up" data-auth-open="signup" aria-haspopup="dialog" aria-controls="auth-dialog">Sign Up</button>
+        <button type="button" class="sign-in" data-auth-open="signin">
+          Sign In
+        </button>
+        <button type="button" class="sign-up" data-auth-open="signup">
+          Sign Up
+        </button>
       </div>
     </header>
     <main class="content">
@@ -56,10 +59,18 @@
           </div>
         </div>
         <div class="social-media">
-          <a href="https://www.facebook.com/OmahTI.UGM/"><img src="assets/images/facebook-icon.svg" alt="Facebook" /></a>
-          <a href="https://www.instagram.com/omahti_ugm/"><img src="assets/images/instagram-icon.svg" alt="Instagram" /></a>
-          <a href="https://x.com/omahti_ugm"><img src="assets/images/x-icon.svg" alt="X" /></a>
-          <a href="https://www.linkedin.com/company/omahti/home/"><img src="assets/images/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://www.facebook.com/OmahTI.UGM/"
+            ><img src="assets/images/facebook-icon.svg" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/omahti_ugm/"
+            ><img src="assets/images/instagram-icon.svg" alt="Instagram"
+          /></a>
+          <a href="https://x.com/omahti_ugm"
+            ><img src="assets/images/x-icon.svg" alt="X"
+          /></a>
+          <a href="https://www.linkedin.com/company/omahti/home/"
+            ><img src="assets/images/linkedin-icon.svg" alt="LinkedIn"
+          /></a>
         </div>
       </section>
       <section class="container-2">
@@ -90,8 +101,12 @@
             </div>
           </div>
           <button type="button" class="next">
-            <p>Selanjutnya</p>
-            <img class="arrow-right" src="assets/images/arrow-right.svg" alt="" />
+            <span>Selanjutnya</span>
+            <img
+              class="arrow-right"
+              src="assets/images/arrow-right.svg"
+              alt=""
+            />
           </button>
         </div>
       </section>
@@ -101,44 +116,54 @@
           <div class="carousel">
             <div
               class="porto-card"
-              style="background-image: url('assets/images/gamora.jpg')"
+              style="
+                background-image: url(&quot;assets/images/gamora.jpg&quot;);
+              "
             >
               <p>Gamora</p>
             </div>
             <div
               class="porto-card"
-              style="background-image: url('assets/images/natasha.jpg')"
+              style="
+                background-image: url(&quot;assets/images/natasha.jpg&quot;);
+              "
             >
               <p>Natasha Romanoff</p>
             </div>
             <div
               class="porto-card"
-              style="background-image: url('assets/images/kate.jpg')"
+              style="background-image: url(&quot;assets/images/kate.jpg&quot;)"
             >
               <p>Kate Bishop</p>
             </div>
             <div
               class="porto-card"
-              style="background-image: url('assets/images/wanda.jpg')"
+              style="background-image: url(&quot;assets/images/wanda.jpg&quot;)"
             >
               <p>Wanda Maximoff</p>
             </div>
             <div class="carousel-hidden" id="portfolio-extra">
               <div
                 class="porto-card hidden"
-                style="background-image: url('assets/images/nebula.jpg')"
+                style="
+                  background-image: url(&quot;assets/images/nebula.jpg&quot;);
+                "
               >
                 <p>Nebula</p>
               </div>
               <div
                 class="porto-card hidden"
-                style="background-image: url('assets/images/carol.jpg')"
+                style="
+                  background-image: url(&quot;assets/images/carol.jpg&quot;);
+                "
               >
                 <p>Carol Danvers</p>
               </div>
               <div
                 class="porto-card hidden"
-                style="background-image: url('assets/images/yelena.jpg')"
+                style="
+                  background-image: url(&quot;assets/images/yelena.jpg&quot;);
+                "
               >
                 <p>Yelena Belova</p>
               </div>
@@ -151,7 +176,6 @@
             class="more"
             id="togglePortoBtn"
             aria-expanded="false"
-            aria-controls="portfolio-extra"
           >
             <span id="btnText">Show More</span>
             <img
@@ -170,13 +194,21 @@
             ><span class="red-1">FE</span><span class="question-mark">?</span>
           </h2>
           <div class="cards">
-            <button type="button" class="arrow-btn-left" id="prevTestiBtn" aria-label="Previous testimonials">
+            <button
+              type="button"
+              class="arrow-btn-left"
+              id="prevTestiBtn"
+              aria-label="Previous testimonials"
+            >
               <img src="assets/images/vector-left.svg" alt="Previous" />
             </button>
             <div class="cards-track" id="testimonialTrack">
               <div class="testimonial-card-1">
                 <div class="card-avatar">
-                  <img src="assets/images/peeta.jpg" alt="Testimonial portrait" />
+                  <img
+                    src="assets/images/peeta.jpg"
+                    alt="Testimonial portrait"
+                  />
                 </div>
                 <div class="card-identity">
                   <h3 class="card-name">Peeta Mellark</h3>
@@ -190,7 +222,10 @@
               </div>
               <div class="testimonial-card-2">
                 <div class="card-avatar">
-                  <img src="assets/images/snow.jpg" alt="Testimonial portrait" />
+                  <img
+                    src="assets/images/snow.jpg"
+                    alt="Testimonial portrait"
+                  />
                 </div>
                 <div class="card-identity">
                   <h3 class="card-name">Coriolanus Snow</h3>
@@ -204,7 +239,10 @@
               </div>
               <div class="testimonial-card-3">
                 <div class="card-avatar">
-                  <img src="assets/images/haymitch.jpg" alt="Testimonial portrait" />
+                  <img
+                    src="assets/images/haymitch.jpg"
+                    alt="Testimonial portrait"
+                  />
                 </div>
                 <div class="card-identity">
                   <h3 class="card-name">Haymitch Abernathy</h3>
@@ -218,7 +256,10 @@
               </div>
               <div class="testimonial-card-4">
                 <div class="card-avatar">
-                  <img src="assets/images/finnick.jpg" alt="Testimonial portrait" />
+                  <img
+                    src="assets/images/finnick.jpg"
+                    alt="Testimonial portrait"
+                  />
                 </div>
                 <div class="card-identity">
                   <h3 class="card-name">Finnick Odair</h3>
@@ -231,7 +272,12 @@
                 </p>
               </div>
             </div>
-            <button type="button" class="arrow-btn-right" id="nextTestiBtn" aria-label="Next testimonials">
+            <button
+              type="button"
+              class="arrow-btn-right"
+              id="nextTestiBtn"
+              aria-label="Next testimonials"
+            >
               <img src="assets/images/vector-right.svg" alt="Next" />
             </button>
           </div>
@@ -242,26 +288,42 @@
           <h2>FAQ</h2>
           <div class="faq-list">
             <details class="faq-item">
-              <summary class="faq-title" aria-expanded="false">
-                <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
+              <summary class="faq-title">
+                <span
+                  >Lorem ipsum dolor sit ameT, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet</span
+                >
                 <span class="faq-icon">&#10095;</span>
               </summary>
               <div class="faq-answer">
-                <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit ameT, consectetur adipiscing elit.</p>
+                <p>
+                  Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                  dolor sit ameT, consectetur adipiscing elit.
+                </p>
               </div>
             </details>
             <details class="faq-item">
-              <summary class="faq-title" aria-expanded="false">
-                <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
+              <summary class="faq-title">
+                <span
+                  >Lorem ipsum dolor sit ameT, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet</span
+                >
                 <span class="faq-icon">&#10095;</span>
               </summary>
               <div class="faq-answer">
-                <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>
+                  Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </div>
             </details>
             <details class="faq-item">
-              <summary class="faq-title" aria-expanded="false">
-                <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
+              <summary class="faq-title">
+                <span
+                  >Lorem ipsum dolor sit ameT, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet</span
+                >
                 <span class="faq-icon">&#10095;</span>
               </summary>
               <div class="faq-answer">
@@ -269,12 +331,21 @@
               </div>
             </details>
             <details class="faq-item" open>
-              <summary class="faq-title" aria-expanded="true">
-                <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
+              <summary class="faq-title">
+                <span
+                  >Lorem ipsum dolor sit ameT, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet</span
+                >
                 <span class="faq-icon">&#10095;</span>
               </summary>
               <div class="faq-answer">
-                <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>
+                  Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                  sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit.
+                </p>
               </div>
             </details>
           </div>
@@ -293,57 +364,53 @@
             <h2>Contact Us!</h2>
             <div class="name-row">
               <div class="name">
-                <label class="first-name" for="first-name">First Name</label>
+                <label for="first-name">First Name</label>
                 <input
-                  class="first-name"
                   type="text"
                   id="first-name"
                   placeholder="Enter first name"
                   required
-                  aria-describedby="first-name-error"
                 />
-                <span class="field-error" id="first-name-error" aria-live="polite"></span>
+                <span class="field-error" id="first-name-error"></span>
               </div>
               <div class="name">
-                <label class="last-name" for="last-name">Last Name</label>
+                <label for="last-name">Last Name</label>
                 <input
-                  class="last-name"
                   type="text"
                   id="last-name"
                   placeholder="Enter last name"
                   required
-                  aria-describedby="last-name-error"
                 />
-                <span class="field-error" id="last-name-error" aria-live="polite"></span>
+                <span class="field-error" id="last-name-error"></span>
               </div>
             </div>
             <div class="info">
-              <label class="email" for="email">Email</label>
+              <label for="email">Email</label>
               <input
-                class="email"
                 type="email"
                 id="email"
                 placeholder="enter@gmail.com"
                 required
-                aria-describedby="email-error"
               />
-              <span class="field-error" id="email-error" aria-live="polite"></span>
+              <span class="field-error" id="email-error"></span>
             </div>
             <div class="info">
-              <label class="message" for="message">Message</label>
+              <label for="message">Message</label>
               <textarea
-                class="message"
                 id="message"
                 placeholder="Enter your message"
                 required
-                aria-describedby="message-error"
               ></textarea>
-              <span class="field-error" id="message-error" aria-live="polite"></span>
+              <span class="field-error" id="message-error"></span>
             </div>
             <div class="form-action">
               <button class="form-button" type="submit">
                 <span>Send</span>
-                <img class="form-button-icon" src="assets/icons/Send.svg" alt="" />
+                <img
+                  class="form-button-icon"
+                  src="assets/icons/Send.svg"
+                  alt=""
+                />
               </button>
             </div>
             <p class="form-status" id="contact-status" role="status"></p>
@@ -355,7 +422,11 @@
       <div class="footer">
         <div class="footer-top">
           <div class="footer-brand">
-            <img class="omahfe-logo" src="assets/images/omahfe-logo.png" alt="OmahFE Logo" />
+            <img
+              class="omahfe-logo"
+              src="assets/images/omahfe-logo.png"
+              alt="OmahFE Logo"
+            />
             <p class="footer-address">
               Gedung Fakultas MIPA UGM Sekip Utara,<br />
               Bulaksumur, Sinduadi, Mlati, Sleman, DI Yogyakarta
@@ -382,10 +453,18 @@
         <div class="footer-social">
           <h3 class="footer-title">Connect with Us</h3>
           <div class="footer-icons">
-            <a href="https://www.instagram.com/omahti_ugm/"><img src="assets/images/instagram-icon.svg" alt="Instagram" /></a>
-            <a href="https://www.facebook.com/OmahTI.UGM/"><img src="assets/images/facebook-icon.svg" alt="Facebook" /></a>
-            <a href="https://x.com/omahti_ugm"><img src="assets/images/x-icon.svg" alt="X" /></a>
-            <a href="https://www.linkedin.com/company/omahti/home/"><img src="assets/images/linkedin-icon.svg" alt="LinkedIn" /></a>
+            <a href="https://www.instagram.com/omahti_ugm/"
+              ><img src="assets/images/instagram-icon.svg" alt="Instagram"
+            /></a>
+            <a href="https://www.facebook.com/OmahTI.UGM/"
+              ><img src="assets/images/facebook-icon.svg" alt="Facebook"
+            /></a>
+            <a href="https://x.com/omahti_ugm"
+              ><img src="assets/images/x-icon.svg" alt="X"
+            /></a>
+            <a href="https://www.linkedin.com/company/omahti/home/"
+              ><img src="assets/images/linkedin-icon.svg" alt="LinkedIn"
+            /></a>
           </div>
         </div>
         <hr class="footer-divider" />
@@ -395,15 +474,14 @@
       </div>
     </footer>
     <dialog class="auth-dialog" id="auth-dialog" aria-labelledby="auth-title">
-      <button class="modal-close" type="button" aria-label="Close dialog">&times;</button>
-      <div class="auth-tabs" role="tablist" aria-label="Account options">
+      <button class="modal-close" type="button" aria-label="Close dialog">
+        &times;
+      </button>
+      <div class="auth-tabs">
         <button
           class="auth-tab is-active"
           type="button"
-          role="tab"
           id="signin-tab"
-          aria-selected="true"
-          aria-controls="signin-panel"
           data-auth-tab="signin"
         >
           Sign In
@@ -411,20 +489,28 @@
         <button
           class="auth-tab"
           type="button"
-          role="tab"
           id="signup-tab"
-          aria-selected="false"
-          aria-controls="signup-panel"
           data-auth-tab="signup"
         >
           Sign Up
         </button>
       </div>
       <h2 id="auth-title">Sign In</h2>
-      <form class="auth-form" id="signin-panel" data-auth-form="signin" novalidate>
+      <form
+        class="auth-form"
+        id="signin-panel"
+        data-auth-form="signin"
+        novalidate
+      >
         <label for="signin-email">Email</label>
-        <input id="signin-email" name="email" type="email" autocomplete="email" required aria-describedby="signin-email-error" />
-        <span class="field-error" id="signin-email-error" aria-live="polite"></span>
+        <input
+          id="signin-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        />
+        <span class="field-error" id="signin-email-error"></span>
         <label for="signin-password">Password</label>
         <input
           id="signin-password"
@@ -433,16 +519,27 @@
           autocomplete="current-password"
           minlength="8"
           required
-          aria-describedby="signin-password-error"
         />
-        <span class="field-error" id="signin-password-error" aria-live="polite"></span>
+        <span class="field-error" id="signin-password-error"></span>
         <p class="form-status" role="status"></p>
         <button class="auth-submit" type="submit">Sign In</button>
       </form>
-      <form class="auth-form" id="signup-panel" data-auth-form="signup" novalidate hidden>
+      <form
+        class="auth-form"
+        id="signup-panel"
+        data-auth-form="signup"
+        novalidate
+        hidden
+      >
         <label for="signup-email">Email</label>
-        <input id="signup-email" name="email" type="email" autocomplete="email" required aria-describedby="signup-email-error" />
-        <span class="field-error" id="signup-email-error" aria-live="polite"></span>
+        <input
+          id="signup-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        />
+        <span class="field-error" id="signup-email-error"></span>
         <label for="signup-password">Password</label>
         <input
           id="signup-password"
@@ -451,9 +548,8 @@
           autocomplete="new-password"
           minlength="8"
           required
-          aria-describedby="signup-password-error"
         />
-        <span class="field-error" id="signup-password-error" aria-live="polite"></span>
+        <span class="field-error" id="signup-password-error"></span>
         <label for="signup-confirm-password">Confirm Password</label>
         <input
           id="signup-confirm-password"
@@ -462,9 +558,8 @@
           autocomplete="new-password"
           minlength="8"
           required
-          aria-describedby="signup-confirm-password-error"
         />
-        <span class="field-error" id="signup-confirm-password-error" aria-live="polite"></span>
+        <span class="field-error" id="signup-confirm-password-error"></span>
         <p class="form-status" role="status"></p>
         <button class="auth-submit" type="submit">Sign Up</button>
       </form>
