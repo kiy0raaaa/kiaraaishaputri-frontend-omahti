@@ -2,38 +2,43 @@
 
 Website landing page untuk **OmahFE**, dibuat dari desain Figma menggunakan HTML, CSS, dan JavaScript biasa (tanpa framework).
 
-Dibuat oleh **Kiara Aisha Putri**.
+## Identitas Diri
 
-## Fitur / Bagian Halaman
+- **Nama**: Kiara Aisha Putri
+- **NIM**: 26/577981/PA/24208
 
-- **Navbar**: menu navigasi (About, Portfolio, Testimonial, FAQ, Contact) dan tombol Sign In / Sign Up. Navbar nempel di atas saat di-scroll.
-- **Landing Page**: judul, deskripsi singkat, gambar, dan ikon sosial media.
-- **Tentang Kami**: penjelasan singkat OmahFE beserta angka tahun berdiri dan total project.
-- **Portofolio**: kartu portofolio dengan tombol **Show More / Show Less** untuk menampilkan atau menyembunyikan kartu tambahan.
-- **Testimoni**: 4 kartu testimoni.
-- **FAQ**: pertanyaan yang bisa dibuka-tutup (pakai tag `<details>`).
-- **Contact**: form kontak (nama, email, pesan).
-- **Footer**: alamat, link navigasi, dan ikon sosial media.
+## Bagian Halaman
+
+- **Navbar**: menu navigasi dan tombol Sign In / Sign Up
+- **Landing Page**: judul, deskripsi singkat, dan gambar utama
+- **Tentang Kami**: penjelasan singkat OmahFE
+- **Portofolio**: kartu portofolio dengan tombol Show More / Show Less
+- **Testimoni**: kartu testimoni
+- **FAQ**: pertanyaan yang bisa dibuka-tutup
+- **Contact**: form kontak
+- **Footer**: alamat, link navigasi, dan ikon sosial media
+
+## Fitur Opsional yang Dikerjakan
+
+- Tombol **Show More / Show Less** di bagian portofolio, untuk menampilkan dan menyembunyikan kartu tambahan. Ikon panahnya ikut berputar sesuai kondisi.
+- [tambahkan fitur opsional lain yang kamu kerjakan, kalau ada]
+
+## Penggunaan AI
+
+Saya menggunakan Claude (AI dari Anthropic) sebagai bantuan saat mengerjakan, khususnya untuk:
+
+- Memperbaiki layout kartu portofolio yang tersembunyi (agar ikut grid dan tidak menyisakan ruang kosong)
+- Mencari penyebab ikon panah pada tombol Show More / Show Less yang tidak berubah (ternyata elemen `<img>`-nya belum diberi `id`)
+- Membantu menyelesaikan kode yang error jika tak kunjung terpecahkan masalahnya.
+
+Desain, struktur halaman, dan konten saya kerjakan sendiri. Kode yang dibantu AI sudah saya baca dan uji sendiri di browser.
 
 ## Teknologi
 
 - HTML5
 - CSS3 (Flexbox dan Grid)
-- JavaScript (untuk tombol Show More / Show Less)
+- JavaScript
 - Font: Inter, Scotch, dan Mystery Quest
-
-## Struktur Folder
-
-```
-.
-├── index.html
-├── style.css
-├── script.js
-└── assets/
-    ├── fonts/
-    ├── icons/
-    └── images/
-```
 
 ## Cara Menjalankan
 
@@ -45,15 +50,4 @@ Dibuat oleh **Kiara Aisha Putri**.
    ```bash
    cd kiaraaishaputri-frontend-omahti
    ```
-3. Buka file `index.html` di browser.
-
-Atau pakai ekstensi **Live Server** di VS Code supaya halaman otomatis refresh saat ada perubahan.
-
-## Catatan
-
-- Pastikan folder `assets` (font, gambar, ikon) ikut ada, kalau tidak tampilannya bakal berantakan.
-- Fitur Show More / Show Less ada di `script.js`. Tombolnya mengubah class `hidden` pada kartu portofolio dan memutar ikon panah.
-
-## Desain
-
-Desain mengacu pada file Figma OmahFE.
+3. Buka file `index.html` di browser (atau pakai Live Server di VS Code).
