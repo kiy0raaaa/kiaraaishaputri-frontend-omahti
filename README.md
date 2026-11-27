@@ -42,7 +42,7 @@ Navbar, Landing Page, Tentang Kami, Portofolio, Testimoni, FAQ, Contact, dan Foo
 
 Saya memakai AI sebagai bantuan dalam pengerjaan, dengan rincian:
 
-- **Claude (Anthropic)**: memperbaiki layout kartu portofolio yang tersembunyi agar mengikuti grid, mencari penyebab ikon panah Show More yang tidak berputar, membuat carousel testimoni yang berputar, dan menganalisis penyebab alur kode dan layout CSS yang tidak sesuai (layout shift, gambar yang menumpuk vertikal, ikon panah testimoni tidak bisa dipencet, dan lainnya).
+- **Claude (Anthropic)**: memperbaiki layout kartu portofolio yang tersembunyi agar mengikuti grid, mencari penyebab ikon panah Show More yang tidak berputar, membuat carousel testimoni yang bergeser, dan menganalisis penyebab alur kode dan layout CSS yang tidak sesuai (layout shift, gambar yang menumpuk vertikal, ikon panah testimoni tidak bisa dipencet, dan lainnya).
 - **Google Gemini**: penyesuaian layout Contact Form (proporsi 0.8:1.2 & posisi tombol Send), debugging CSS flex-wrap pada portofolio, pembuatan struktur HTML/CSS Footer.
 
 Semua kode sudah saya baca, saya uji di browser, dan saya sesuaikan sendiri.
