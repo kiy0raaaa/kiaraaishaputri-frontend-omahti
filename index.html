@@ -1,270 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OmahFE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="ja"
-</head>
-<body>
-    <div class="navbar">
-        <div class="logo">
-            <p>OmahFE</p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <p><a href="#landing-page">OmahFE</a></p>
+      </div>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonial">Testimonial</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="sign">
+        <button type="button" class="sign-in" data-auth-open="signin" aria-haspopup="dialog" aria-controls="auth-dialog">Sign In</button>
+        <button type="button" class="sign-up" data-auth-open="signup" aria-haspopup="dialog" aria-controls="auth-dialog">Sign Up</button>
+      </div>
+    </header>
+    <main class="content">
+      <section class="container-1">
+        <div class="landing-page" id="landing-page">
+          <div class="intro">
+            <h1 class="omah">Omah<span class="highlight">FE</span></h1>
+            <h2>
+              We Slice <span class="blue">FrontEnd</span> for
+              <span class="blue">Everyone</span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque efficitur quam orci. Donec cursus nibh vitae diam
+              gravida mattis. Sed dignissim magna tortor, vitae varius libero
+              consectetur viverra. Fusce posuere efficitur blandit. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
+          <div class="image-fe">
+            <img src="assets/images/fe.png" alt="Landing Page Image" />
+          </div>
         </div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#testimonial">Testimonial</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
+        <div class="social-media">
+          <a href="https://www.facebook.com/OmahTI.UGM/"><img src="assets/images/facebook-icon.svg" alt="Facebook" /></a>
+          <a href="https://www.instagram.com/omahti_ugm/"><img src="assets/images/instagram-icon.svg" alt="Instagram" /></a>
+          <a href="https://x.com/omahti_ugm"><img src="assets/images/x-icon.svg" alt="X" /></a>
+          <a href="https://www.linkedin.com/company/omahti/home/"><img src="assets/images/linkedin-icon.svg" alt="LinkedIn" /></a>
         </div>
-        <div class="sign">
-            <button type="button" class="sign-in">Sign In</button>
-            <button type="button" class="sign-up">Sign Up</button>
-        </div>
-    </div>
-    <div class="content">
-        <div class="container-1">
-            <div class="landing-page">
-                <div class="intro">
-                    <h1 class="omah">Omah<span class="highlight">FE</span></h1>
-                    <h4>We Slice <span class="blue">FrontEnd</span> for <span class="blue">Everyone</span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur quam orci. Donec cursus nibh vitae diam gravida mattis. Sed dignissim magna tortor, vitae varius libero consectetur viverra. Fusce posuere efficitur blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                </div>
-                <div class="image-fe">
-                    <img src="assets/images/fe.png" alt="Landing Page Image">
-                </div>
+      </section>
+      <section class="container-2">
+        <div class="about" id="about">
+          <h2>Tentang Kami</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque efficitur quam orci. Donec cursus nibh vitae diam
+            gravida mattis. Sed dignissim magna tortor, vitae varius libero
+            consectetur viverra. Fusce posuere efficitur blandit. Interdum et
+            malesuada fames ac ante ipsum primis in faucibus. Donec bibendum
+            efficitur ante, ac lacinia lectus egestas et. Donec aliquet ac lorem
+            ac semper. Duis ultrices nibh ipsum, quis dapibus turpis consectetur
+            sed. Suspendisse iaculis diam vel turpis volutpat, vel suscipit
+            risus consectetur. Nam convallis lacinia feugiat. Pellentesque
+            auctor eleifend orci sed molestie. Vestibulum fermentum erat nunc,
+            non finibus orci commodo non. Praesent iaculis gravida elit eget
+            laoreet. Nullam vel pulvinar dui.
+          </p>
+          <div class="number">
+            <div class="since">
+              <h3>2015</h3>
+              <p>Berdiri Sejak</p>
             </div>
-            <div class="social-media">
-                <a href="#"><img src="assets/images/facebook-icon.svg" alt="Facebook"></a>
-                <a href="#"><img src="assets/images/instagram-icon.svg" alt="Instagram"></a>
-                <a href="#"><img src="assets/images/x-icon.svg" alt="X"></a>
-                <a href="#"><img src="assets/images/linkedin-icon.svg" alt="LinkedIn"></a>
+            <div class="total">
+              <h3>225</h3>
+              <p>Total Project</p>
             </div>
+          </div>
+          <button type="button" class="next">
+            <p>Selanjutnya</p>
+            <img class="arrow-right" src="assets/images/arrow-right.svg" alt="" />
+          </button>
         </div>
-        <div class="container-2">
-            <div class="about" id="about">
-                <h2>Tentang Kami</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur quam orci. Donec cursus nibh vitae diam gravida mattis. Sed dignissim magna tortor, vitae varius libero consectetur viverra. Fusce posuere efficitur blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec bibendum efficitur ante, ac lacinia lectus egestas et. Donec aliquet ac lorem ac semper. Duis ultrices nibh ipsum, quis dapibus turpis consectetur sed. Suspendisse iaculis diam vel turpis volutpat, vel suscipit risus consectetur. Nam convallis lacinia feugiat. Pellentesque auctor eleifend orci sed molestie. Vestibulum fermentum erat nunc, non finibus orci commodo non. Praesent iaculis gravida elit eget laoreet. Nullam vel pulvinar dui.</p>
-                <div class="number">
-                    <div class="since">
-                        <h4>2015</h4>
-                        <p>Berdiri Sejak</p>
-                    </div>
-                    <div class="total">
-                        <h4>225</h4>
-                        <p>Total Project</p>
-                    </div>
-                </div>
-                <button type="button" class="next">
-                    <p>Selanjutnya</p>
-                    <img class="arrow-right" src="assets/images/arrow-right.svg">
-                </button>
+      </section>
+      <section class="container-3">
+        <div class="porto" id="portfolio">
+          <h2>See Our Latest <span class="red">Portofolio</span></h2>
+          <div class="carousel">
+            <div
+              class="porto-card"
+              style="background-image: url('assets/images/gamora.jpg')"
+            >
+              <p>Gamora</p>
             </div>
-        </div>
-        <div class="container-3">
-            <div class="porto" id="porto">
-                <h2>See Our Latest <span class="red">Portofolio</span></h2>
-                <div class="carousel">
-                    <div class="porto-card" style="background-image: url('assets/images/gamora.jpg')"><p>Lorem Ipsum</p></div>
-                    <div class="porto-card" style="background-image: url('assets/images/natasha.jpg')"><p>Lorem Ipsum</p></div>
-                    <div class="porto-card" style="background-image: url('assets/images/kate.jpg')"><p>Lorem Ipsum</p></div>
-                    <div class="porto-card" style="background-image: url('assets/images/wanda.jpg')"><p>Lorem Ipsum</p></div>
-                    <div class="carousel-hidden">
-                        <div class="porto-card hidden" style="background-image: url('assets/images/nebula.jpg')"><p>Lorem Ipsum</p></div>
-                        <div class="porto-card hidden" style="background-image: url('assets/images/carol.jpg')"><p>Lorem Ipsum</p></div>
-                        <div class="porto-card hidden" style="background-image: url('assets/images/yelena.jpg')"><p>Lorem Ipsum</p></div>
-                    </div>
-                </div>
-                </div>
-                <div class="show-more">
-                    <button type="button" class="more" id="togglePortoBtn">
-                        <p id="btnText">Show More</p>
-                        <img class="arrow-down" id="btnIcon" src="assets/images/arrow-down.svg">
-                    </button>
-                </div>
+            <div
+              class="porto-card"
+              style="background-image: url('assets/images/natasha.jpg')"
+            >
+              <p>Natasha Romanoff</p>
             </div>
-        </div>
-        <div class="container-4">
-            <div class="testimonial" id="testimonial">
-                <h2>What They Say about <span class="omahfe">Omah</span><span class="red-1">FE</span><span class="question-mark">?</span></h2>
-                <div class="cards">
-                    <button type="button" class="arrow-btn-left">
-                        <img src="assets/images/vector-left.svg">
-                    </button>
-                    <div class="testimonial-card-1">
-                        <div class="card-avatar">
-                            <img src="assets/images/peeta.jpg">
-                        </div>
-                        <div class="card-identity">
-                            <h3 class="card-name">Janu Pasha Shandy</h3>
-                            <p class="card-role">Staff of OmahFE</p>
-                        </div>
-                        <p class="card-desc">
-                        Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit            </p>
-                    </div>
-                    <div class="testimonial-card-2">
-                        <div class="card-avatar">
-                            <img src="assets/images/snow.jpg">
-                        </div>
-                        <div class="card-identity">
-                            <h3 class="card-name">Janu Pasha Shandy</h3>
-                            <p class="card-role">Staff of OmahFE</p>
-                        </div>
-                        <p class="card-desc">
-                        Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit            </p>
-                    </div>
-                    <div class="testimonial-card-3">
-                        <div class="card-avatar">
-                            <img src="assets/images/haymitch.jpg">
-                        </div>
-                        <div class="card-identity">
-                            <h3 class="card-name">Janu Pasha Shandy</h3>
-                            <p class="card-role">Staff of OmahFE</p>
-                        </div>
-                        <p class="card-desc">
-                        Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit            </p>
-                    </div>
-                    <div class="testimonial-card-4">
-                        <div class="card-avatar">
-                            <img src="assets/images/finnick.jpg">
-                        </div>
-                        <div class="card-identity">
-                            <h3 class="card-name">Janu Pasha Shandy</h3>
-                            <p class="card-role">Staff of OmahFE</p>
-                        </div>
-                        <p class="card-desc">
-                        Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit            </p>
-                    </div>
-                    <button type="button" class="arrow-btn-right">
-                        <img src="assets/images/vector-right.svg">
-                    </button>
-                </div>
+            <div
+              class="porto-card"
+              style="background-image: url('assets/images/kate.jpg')"
+            >
+              <p>Kate Bishop</p>
             </div>
-        </div>
-        <div class="container-5">
-            <div class="faq-content">
-                <h2>FAQ</h2>
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary class="faq-title">
-                            <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
-                            <span class="faq-icon">&#10095;</span>
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit ameT, consectetur adipiscing elit.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-title">
-                            <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
-                            <span class="faq-icon">&#10095;</span>
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-title">
-                            <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
-                            <span class="faq-icon">&#10095;</span>
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item" open>
-                        <summary class="faq-title">
-                            <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
-                            <span class="faq-icon">&#10095;</span>
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </details>
-                </div>
+            <div
+              class="porto-card"
+              style="background-image: url('assets/images/wanda.jpg')"
+            >
+              <p>Wanda Maximoff</p>
             </div>
-        </div>
-        <div class="container-6">
-            <div class="contact">
-                <div class="contact-info">
-                    <h2>Punya ide?<br>Yuk kita wujudkan.</h2>
-                    <p class="contact-desc">Ceritakan rencana dan kebutuhanmu.<br>Mari mulai percakapan yang baik.</p>
-                </div>
-                <div class="contact-form">
-                    <h2>Contact Us!</h2>
-                    <div class="name-row">
-                        <div class="name">
-                            <label class="first-name" for="first-name">First Name</label>
-                            <input class="first-name" type="text" id="first-name" placeholder="Enter first name">
-                        </div>
-                        <div class="name">
-                            <label class="last-name" for="last-name">Last Name</label>
-                            <input class="last-name" type="text" id="last-name" placeholder="Enter last name">
-                        </div>                    
-                    </div>
-                    <div class="info">
-                        <label class="email" for="email">Email</label>
-                        <input class="email" type="text" id="email" placeholder="enter@gmail.com">
-                    </div>
-                    <div class="info">
-                        <label class="message" for="message">Message</label>
-                        <textarea class="message" type="text" id="message" placeholder="enter@gmail.com"></textarea>
-                    </div>
-                    <div class="form-action">
-                        <button class="form-button" type="submit">
-                            <span>Send</span>
-                            <img class="form-button-icon" src="assets/icons/Send.svg" alt="Send">
-                        </button>
-                    </div>
-                </div>
+            <div class="carousel-hidden" id="portfolio-extra">
+              <div
+                class="porto-card hidden"
+                style="background-image: url('assets/images/nebula.jpg')"
+              >
+                <p>Nebula</p>
+              </div>
+              <div
+                class="porto-card hidden"
+                style="background-image: url('assets/images/carol.jpg')"
+              >
+                <p>Carol Danvers</p>
+              </div>
+              <div
+                class="porto-card hidden"
+                style="background-image: url('assets/images/yelena.jpg')"
+              >
+                <p>Yelena Belova</p>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container-7">
-            <div class="footer">
-                <div class="footer-top">
-                    <div class="footer-brand">
-                        <img class="omahfe-logo" src="assets/images/omahfe-logo.png" alt="OmahFE Logo">
-                        <p class="footer-address">
-                            Gedung Fakultas MIPA UGM Sekip Utara,<br>
-                            Bulaksumur, Sinduadi, Mlati, Sleman, DI Yogyakarta
-                        </p>
-                    </div>
-                    <div class="footer-nav">
-                        <div class="footer-col">
-                            <h4 class="col-title">Page</h4>
-                            <ul class="col-list">
-                                <li><a href="#about">About Us</a></li>
-                                <li><a href="#services">Our Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#testimonials">Testimonials</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4 class="col-title">Support</h4>
-                            <ul class="col-list">
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="show-more">
+          <button
+            type="button"
+            class="more"
+            id="togglePortoBtn"
+            aria-expanded="false"
+            aria-controls="portfolio-extra"
+          >
+            <span id="btnText">Show More</span>
+            <img
+              class="arrow-down"
+              id="btnIcon"
+              src="assets/images/arrow-down.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </section>
+      <section class="container-4">
+        <div class="testimonial" id="testimonial">
+          <h2>
+            What They Say about <span class="omahfe">Omah</span
+            ><span class="red-1">FE</span><span class="question-mark">?</span>
+          </h2>
+          <div class="cards">
+            <button type="button" class="arrow-btn-left" id="prevTestiBtn" aria-label="Previous testimonials">
+              <img src="assets/images/vector-left.svg" alt="Previous" />
+            </button>
+            <div class="cards-track" id="testimonialTrack">
+              <div class="testimonial-card-1">
+                <div class="card-avatar">
+                  <img src="assets/images/peeta.jpg" alt="Testimonial portrait" />
                 </div>
-                <div class="footer-social">
-                    <h4 class="footer-title">Connect with Us</h4>
-                    <div class="footer-icons">
-                        <a href="#"><img src="assets/images/instagram-icon.svg" alt="Instagram"></a>
-                        <a href="#"><img src="assets/images/facebook-icon.svg" alt="Facebook"></a>
-                        <a href="#"><img src="assets/images/x-icon.svg" alt="X"></a>
-                        <a href="#"><img src="assets/images/linkedin-icon.svg" alt="LinkedIn"></a>
-                    </div>
+                <div class="card-identity">
+                  <h3 class="card-name">Peeta Mellark</h3>
+                  <p class="card-role">Staff of OmahFE</p>
                 </div>
-                <hr class="footer-divider">
-                <div class="footer-bottom">
-                    <p class="footer-copyright">&copy; OmahFE 2026</p>
+                <p class="card-desc">
+                  Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
+                  dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+              <div class="testimonial-card-2">
+                <div class="card-avatar">
+                  <img src="assets/images/snow.jpg" alt="Testimonial portrait" />
                 </div>
+                <div class="card-identity">
+                  <h3 class="card-name">Coriolanus Snow</h3>
+                  <p class="card-role">Staff of OmahFE</p>
+                </div>
+                <p class="card-desc">
+                  Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
+                  dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+              <div class="testimonial-card-3">
+                <div class="card-avatar">
+                  <img src="assets/images/haymitch.jpg" alt="Testimonial portrait" />
+                </div>
+                <div class="card-identity">
+                  <h3 class="card-name">Haymitch Abernathy</h3>
+                  <p class="card-role">Staff of OmahFE</p>
+                </div>
+                <p class="card-desc">
+                  Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
+                  dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+              <div class="testimonial-card-4">
+                <div class="card-avatar">
+                  <img src="assets/images/finnick.jpg" alt="Testimonial portrait" />
+                </div>
+                <div class="card-identity">
+                  <h3 class="card-name">Finnick Odair</h3>
+                  <p class="card-role">Staff of OmahFE</p>
+                </div>
+                <p class="card-desc">
+                  Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
+                  dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
             </div>
+            <button type="button" class="arrow-btn-right" id="nextTestiBtn" aria-label="Next testimonials">
+              <img src="assets/images/vector-right.svg" alt="Next" />
+            </button>
+          </div>
         </div>
-    </div>
+      </section>
+      <section class="container-5">
+        <div class="faq-content" id="faq">
+          <h2>FAQ</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary class="faq-title" aria-expanded="false">
+                <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
+                <span class="faq-icon">&#10095;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit ameT, consectetur adipiscing elit.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-title" aria-expanded="false">
+                <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
+                <span class="faq-icon">&#10095;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-title" aria-expanded="false">
+                <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
+                <span class="faq-icon">&#10095;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit.</p>
+              </div>
+            </details>
+            <details class="faq-item" open>
+              <summary class="faq-title" aria-expanded="true">
+                <span>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet</span>
+                <span class="faq-icon">&#10095;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit ameT, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="container-6">
+        <div class="contact" id="contact">
+          <div class="contact-info">
+            <h2>Punya ide?<br />Yuk kita wujudkan.</h2>
+            <p class="contact-desc">
+              Ceritakan rencana dan kebutuhanmu.<br />Mari mulai percakapan yang
+              baik.
+            </p>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <h2>Contact Us!</h2>
+            <div class="name-row">
+              <div class="name">
+                <label class="first-name" for="first-name">First Name</label>
+                <input
+                  class="first-name"
+                  type="text"
+                  id="first-name"
+                  placeholder="Enter first name"
+                  required
+                  aria-describedby="first-name-error"
+                />
+                <span class="field-error" id="first-name-error" aria-live="polite"></span>
+              </div>
+              <div class="name">
+                <label class="last-name" for="last-name">Last Name</label>
+                <input
+                  class="last-name"
+                  type="text"
+                  id="last-name"
+                  placeholder="Enter last name"
+                  required
+                  aria-describedby="last-name-error"
+                />
+                <span class="field-error" id="last-name-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="info">
+              <label class="email" for="email">Email</label>
+              <input
+                class="email"
+                type="email"
+                id="email"
+                placeholder="enter@gmail.com"
+                required
+                aria-describedby="email-error"
+              />
+              <span class="field-error" id="email-error" aria-live="polite"></span>
+            </div>
+            <div class="info">
+              <label class="message" for="message">Message</label>
+              <textarea
+                class="message"
+                id="message"
+                placeholder="Enter your message"
+                required
+                aria-describedby="message-error"
+              ></textarea>
+              <span class="field-error" id="message-error" aria-live="polite"></span>
+            </div>
+            <div class="form-action">
+              <button class="form-button" type="submit">
+                <span>Send</span>
+                <img class="form-button-icon" src="assets/icons/Send.svg" alt="" />
+              </button>
+            </div>
+            <p class="form-status" id="contact-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="container-7">
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img class="omahfe-logo" src="assets/images/omahfe-logo.png" alt="OmahFE Logo" />
+            <p class="footer-address">
+              Gedung Fakultas MIPA UGM Sekip Utara,<br />
+              Bulaksumur, Sinduadi, Mlati, Sleman, DI Yogyakarta
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-col">
+              <h3 class="col-title">Page</h3>
+              <ul class="col-list">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#about">Our Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3 class="col-title">Support</h3>
+              <ul class="col-list">
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3 class="footer-title">Connect with Us</h3>
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/omahti_ugm/"><img src="assets/images/instagram-icon.svg" alt="Instagram" /></a>
+            <a href="https://www.facebook.com/OmahTI.UGM/"><img src="assets/images/facebook-icon.svg" alt="Facebook" /></a>
+            <a href="https://x.com/omahti_ugm"><img src="assets/images/x-icon.svg" alt="X" /></a>
+            <a href="https://www.linkedin.com/company/omahti/home/"><img src="assets/images/linkedin-icon.svg" alt="LinkedIn" /></a>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <p class="footer-copyright">&copy; OmahFE 2026</p>
+        </div>
+      </div>
+    </footer>
+    <dialog class="auth-dialog" id="auth-dialog" aria-labelledby="auth-title">
+      <button class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+      <div class="auth-tabs" role="tablist" aria-label="Account options">
+        <button
+          class="auth-tab is-active"
+          type="button"
+          role="tab"
+          id="signin-tab"
+          aria-selected="true"
+          aria-controls="signin-panel"
+          data-auth-tab="signin"
+        >
+          Sign In
+        </button>
+        <button
+          class="auth-tab"
+          type="button"
+          role="tab"
+          id="signup-tab"
+          aria-selected="false"
+          aria-controls="signup-panel"
+          data-auth-tab="signup"
+        >
+          Sign Up
+        </button>
+      </div>
+      <h2 id="auth-title">Sign In</h2>
+      <form class="auth-form" id="signin-panel" data-auth-form="signin" novalidate>
+        <label for="signin-email">Email</label>
+        <input id="signin-email" name="email" type="email" autocomplete="email" required aria-describedby="signin-email-error" />
+        <span class="field-error" id="signin-email-error" aria-live="polite"></span>
+        <label for="signin-password">Password</label>
+        <input
+          id="signin-password"
+          name="password"
+          type="password"
+          autocomplete="current-password"
+          minlength="8"
+          required
+          aria-describedby="signin-password-error"
+        />
+        <span class="field-error" id="signin-password-error" aria-live="polite"></span>
+        <p class="form-status" role="status"></p>
+        <button class="auth-submit" type="submit">Sign In</button>
+      </form>
+      <form class="auth-form" id="signup-panel" data-auth-form="signup" novalidate hidden>
+        <label for="signup-email">Email</label>
+        <input id="signup-email" name="email" type="email" autocomplete="email" required aria-describedby="signup-email-error" />
+        <span class="field-error" id="signup-email-error" aria-live="polite"></span>
+        <label for="signup-password">Password</label>
+        <input
+          id="signup-password"
+          name="password"
+          type="password"
+          autocomplete="new-password"
+          minlength="8"
+          required
+          aria-describedby="signup-password-error"
+        />
+        <span class="field-error" id="signup-password-error" aria-live="polite"></span>
+        <label for="signup-confirm-password">Confirm Password</label>
+        <input
+          id="signup-confirm-password"
+          name="confirm-password"
+          type="password"
+          autocomplete="new-password"
+          minlength="8"
+          required
+          aria-describedby="signup-confirm-password-error"
+        />
+        <span class="field-error" id="signup-confirm-password-error" aria-live="polite"></span>
+        <p class="form-status" role="status"></p>
+        <button class="auth-submit" type="submit">Sign Up</button>
+      </form>
+    </dialog>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

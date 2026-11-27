@@ -20,8 +20,12 @@ Website landing page untuk **OmahFE**, dibuat dari desain Figma menggunakan HTML
 
 ## Fitur Opsional yang Dikerjakan
 
-- Tombol **Show More / Show Less** di bagian portofolio, untuk menampilkan dan menyembunyikan kartu tambahan. Ikon panahnya ikut berputar sesuai kondisi.
-- [tambahkan fitur opsional lain yang kamu kerjakan, kalau ada]
+- Halaman responsif pada breakpoint 1024px, 768px, dan 480px, termasuk menu hamburger dan susunan grid yang menyesuaikan.
+- Tombol **Show More / Show Less** menampilkan kartu portofolio tambahan, memperbarui label, status aksesibilitas, dan arah ikon.
+- Modal **Sign In / Sign Up** dengan perpindahan form, validasi email/password, konfirmasi password, penutupan via overlay/tombol Escape, serta pesan hasil lokal. Data password tidak disimpan atau dikirim.
+- Validasi inline untuk form Contact dan pesan konfirmasi saat field valid.
+- FAQ menggunakan accordion native `<details>` dengan transisi visual.
+- Animasi masuk viewport, hover, dan navigasi aktif/smooth scroll; gerakan dikurangi saat preferensi reduced motion aktif.
 
 ## Penggunaan AI
 
@@ -30,6 +34,8 @@ Saya menggunakan Claude (AI dari Anthropic) sebagai bantuan saat mengerjakan, kh
 - Memperbaiki layout kartu portofolio yang tersembunyi (agar ikut grid dan tidak menyisakan ruang kosong)
 - Mencari penyebab ikon panah pada tombol Show More / Show Less yang tidak berubah (ternyata elemen `<img>`-nya belum diberi `id`)
 - Membantu menyelesaikan kode yang error jika tak kunjung terpecahkan masalahnya.
+
+GitHub Copilot juga digunakan untuk audit kode, perbaikan temuan, desain responsif, dan implementasi fitur opsional.
 
 Desain, struktur halaman, dan konten saya kerjakan sendiri. Kode yang dibantu AI sudah saya baca dan uji sendiri di browser.
 
