@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 64px;
 }
 
 :root {
@@ -56,7 +57,8 @@ summary {
   z-index: 999;
 }
 
-.logo, .logo a {
+.logo,
+.logo a {
   color: #600e01;
   text-decoration: none;
 }
@@ -220,7 +222,7 @@ summary {
 }
 
 .about h2 {
-  font-family: "Scotch", "sans-serif";
+  font-family: "Scotch", sans-serif;
   font-size: 56px;
   color: #ed2304;
   padding: 0;
@@ -228,7 +230,7 @@ summary {
 }
 
 .about p {
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   color: #41372e;
   max-width: 651px;
 }
@@ -245,14 +247,14 @@ summary {
 
 .number h3 {
   color: #831302;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   font-size: 36px;
   padding: 0;
   margin: 0;
 }
 
 .number p {
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #5b4c40;
   font-weight: 500;
@@ -293,7 +295,7 @@ summary {
 .next span {
   font-size: 15px;
   color: #ffffff;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   margin: 6px;
 }
 
@@ -325,7 +327,7 @@ summary {
 }
 
 .red {
-  font-family: "MysteryQuest", "sans-serif";
+  font-family: "MysteryQuest", sans-serif;
   color: #fb3719;
   font-weight: 400;
 }
@@ -380,10 +382,6 @@ summary {
 
 .hidden {
   display: none !important;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
 }
 
 .show-more {
@@ -415,7 +413,7 @@ summary {
 .more span {
   font-size: 23.459px;
   color: #f4f1ef;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   line-height: 35.189px;
 }
 
@@ -456,23 +454,23 @@ summary {
   padding-top: 20px;
   font-size: 56px;
   color: #746152;
-  font-family: "Scotch", "sans-serif";
+  font-family: "Scotch", sans-serif;
 }
 
 .omahfe {
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   color: #746152;
   font-weight: bold;
 }
 
 .red-1 {
   color: #ed2304;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   font-weight: bold;
 }
 
 .question-mark {
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   color: #746152;
   font-weight: bold;
 }
@@ -491,7 +489,6 @@ summary {
   flex-direction: row;
   gap: 20px;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   width: 100%;
   padding: 10px 0;
 }
@@ -526,7 +523,7 @@ summary {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
 
   width: 256px;
   height: 400px;
@@ -549,7 +546,7 @@ summary {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
 
   width: 256px;
   height: 400px;
@@ -613,7 +610,7 @@ summary {
   font-weight: 700;
   color: #8d7664;
   margin: 0;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   margin-left: 12px;
 }
 
@@ -621,7 +618,7 @@ summary {
   font-size: 12px;
   color: #8d7664;
   margin: 0;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   margin-left: 12px;
 }
 
@@ -630,7 +627,7 @@ summary {
   color: #8d7664;
   line-height: 1.4;
   margin: 14px;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   text-align: left;
 }
 
@@ -655,7 +652,7 @@ summary {
 }
 
 .faq-content h2 {
-  font-family: "Scotch", "sans-serif";
+  font-family: "Scotch", sans-serif;
   font-size: 48px;
   color: #fb3719;
   margin-top: 0;
@@ -705,20 +702,6 @@ summary {
 
 .faq-item[open] .faq-answer {
   animation: faq-reveal 220ms ease both;
-}
-
-@supports selector(details::details-content) {
-  .faq-item::details-content {
-    block-size: 0;
-    overflow: hidden;
-    transition:
-      block-size 240ms ease,
-      content-visibility 240ms allow-discrete;
-  }
-
-  .faq-item[open]::details-content {
-    block-size: auto;
-  }
 }
 
 @keyframes faq-reveal {
@@ -783,7 +766,7 @@ summary {
 }
 
 .contact-info h2 {
-  font-family: "MysteryQuest", "sans-serif";
+  font-family: "MysteryQuest", sans-serif;
   font-size: 50px;
   color: #f4f1ef;
   font-weight: 100;
@@ -792,7 +775,7 @@ summary {
 .contact-desc {
   color: #f4f1ef;
   font-size: 12px;
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   font-weight: 300;
 }
 
@@ -806,7 +789,7 @@ summary {
 
 .contact-form h2 {
   color: #f4f1ef;
-  font-family: "Scotch", "sans-serif";
+  font-family: "Scotch", sans-serif;
   font-size: 50px;
   padding: 0;
   margin: 0;
@@ -904,7 +887,7 @@ summary {
   padding: 50px 0 20px 0;
   width: 100%;
   box-sizing: border-box;
-  height: 600px;
+  min-height: 600px;
 }
 
 .footer {
@@ -1181,7 +1164,8 @@ summary {
   transform: translateY(-2px);
 }
 
-.porto-card:hover {
+.porto-card:hover,
+.porto-card.is-visible:hover {
   transform: translateY(-3px);
 }
 
@@ -1248,7 +1232,6 @@ summary {
   }
 
   .cards {
-    flex-wrap: wrap;
     max-width: 900px;
     padding: 0 24px;
   }
@@ -1437,9 +1420,15 @@ summary {
     padding: 12px 12px 0;
   }
 
+  .testimonial {
+    width: 100%;
+  }
+
   .cards {
-    flex-direction: column;
-    gap: 16px;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    gap: 8px;
   }
 
   .testimonial-card-1,
